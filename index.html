@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Cartas Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Jogo de Flashcards de Programação</h1>
+        <div class="scoreboard">
+            <p>Pontuação: <span id="score">0</span></p>
+            <button onclick="resetGame()">Reiniciar Jogo</button>
+        </div>
+    </div>
+
+    <div class="game-board">
+        <!-- Cartas de Perguntas -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>O que é HTML?</h2>
+                </div>
+                <div class="card-back">
+                    <h2>Linguagem de marcação usada para criar páginas web</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>O que é CSS?</h2>
+                </div>
+                <div class="card-back">
+                    <h2>Folhas de estilo usadas para definir o design de páginas web</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>O que é JavaScript?</h2>
+                </div>
+                <div class="card-back">
+                    <h2>Linguagem de programação usada para adicionar interatividade em páginas web</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>O que é uma variável?</h2>
+                </div>
+                <div class="card-back">
+                    <h2>Um contêiner para armazenar dados que podem mudar durante a execução do programa</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>O que é um loop?</h2>
+                </div>
+                <div class="card-back">
+                    <h2>Uma estrutura que repete um bloco de código até uma condição ser satisfeita</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>O que é uma função?</h2>
+                </div>
+                <div class="card-back">
+                    <h2>Um bloco de código reutilizável que executa uma tarefa específica</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Desenvolvido para estudo interativo de programação!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
